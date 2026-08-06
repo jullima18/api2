@@ -12,5 +12,5 @@ app.listen(3000, () => {
 });
 
 app.post("/alunos",(req, res)=>{
-    res.send("enviando dados para api2")
+  res.send(`nome ${req.body.nome} idade:${req.body.idade}`)
 })

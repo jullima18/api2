@@ -56,3 +56,7 @@ values
 	('joao@teste.com', 'admin456');
 
 SELECT * from usuarios;
+
+
+
+docker run -d --name mysql_login_db -e MYSQL-ROOT_PASSWORD=rootpassword -e MASQL_DATABASE=login -e MYSQL_USER=admin -e MYSQL_PASSWORD=1234 -v mysql_data:/var/lib/mysql -p 3306:3306 mysql:8.0
